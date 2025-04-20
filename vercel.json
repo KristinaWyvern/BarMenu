@@ -1,0 +1,5 @@
+{
+    "redirects": [
+      { "source": "", "destination": "/bar_menu.html", "permanent": false }
+    ]
+  }
