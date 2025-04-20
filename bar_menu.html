@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="viewport" content="width=1024">
+    <title>Pi Menu</title>
+    <link rel="stylesheet" href="./scr/styles.css" />
+    <link rel="icon" href="./scr/assets/logo2.png" type="image/png">
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <h1  class="neon-list name-bar"><img id="header-img" src="./scr/assets/logo.jpg" alt="Pi" ></h1>       
+        <ul>
+          <li  style="--color: #9400c7">
+            <a href="#" class="neon-list" data-text="&nbsp;Home">
+              &nbsp;Home&nbsp;
+            </a>
+          </li>
+          <li style="--color: deeppink">
+            <a href="#menu" class="neon-list" data-text="&nbsp;Menu">
+              &nbsp;Menu&nbsp;
+            </a>
+          </li>
+          <li style="--color: dodgerblue">
+            <a href="#order-form" class="neon-list" data-text="&nbsp;Order">
+              &nbsp;Order&nbsp;
+            </a>
+          </li>          
+        </ul>
+        
+        <h1></h1>
+      </nav>
+    </header>
+  <section id="menu" class="menu"> 
+    <div class="name" style="--color: deeppink">
+      <h2>Menu</h2>
+    </div>   
+    <div style="display: flex; text-align: center;">
+        <div class="cocktails" style="--color: #00b8ff">
+            <h2 class="neon"  >Cocktails</h2>
+            <div class="content">
+                <ul>
+                    <li>
+                      <article>
+                        <h3>Mexican mule</h3>
+                        <p><em><span>Tequila, ginger juice, lemon juice, sugar syrup, baking soda, lemon - $3.00</span></em></p>
+                      </article>
+                    </li>
+                    <li>
+                      <article>
+                        <h3>Gin Basil</h3>
+                        <p><em><span>Green Baboon gin, basil syrup, lemon juice, basil - $2.50</span></em></p>
+                      </article>
+                    </li>
+                    <li>
+                      <article>
+                        <h3>Bloody Mary</h3>
+                        <p><em><span>Husky vodka, lemon, tomato juice, tabasco sauce, liquid smoke, salt, pepper, pickled cucumber, cherry tomato, celery - $2.80</span></em></p>
+                      </article>
+                    </li>                    
+                    <li>
+                      <article>
+                        <h3>Mojito</h3>
+                        <p><em><span>Rum, mint, sugar syrup, lime, club soda - $2.50</span></em></p>
+                      </article>
+                    </li>                    
+                    <li>
+                      <article>
+                        <h3>Margarita</h3>
+                        <p><em><span>Orange liqueur, tequila, lemon juice, salt, lime - $3.00</span></em></p>
+                      </article>
+                    </li>
+                </ul>
+                
+            <img class="menu-img" src="./scr/assets/cocktail.png" alt="cocktail" > 
+            </div> 
+        </div>
+        <div class="shots" style="--color: #00ffb1">
+          <h2 class="neon">Shots</h2>
+          <div class="content">
+              <ul>
+                <li>
+                  <article>
+                    <h3>Woo Woo</h3>
+                    <p><em><span>Peach schnapps, vodka, cranberry juice - $1.50</span></em></p>
+                  </article>
+                </li>
+                  <li>
+                    <article>
+                      <h3>Mad Dog</h3>
+                      <p><em><span>Raspberry syrup, vodka, dash tabasko - $1.50</span></em></p>
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <h3>Freak Shot</h3>
+                      <p><em><span>Mint liquor, cucumber vodka - $1.50</span></em></p>
+                    </article>
+                  </li>                    
+                  <li>
+                    <article>
+                      <h3>Cranberry Cookie</h3>
+                      <p><em><span>Cranderry juice, disaronno - $1.50</span></em></p>
+                    </article>
+                  </li>                    
+                  <li>
+                    <article>
+                      <h3>Silver Bullet</h3>
+                      <p><em><span>Gin, scotch whisky, lemon twist - $1.50</span></em></p>
+                    </article>
+                  </li>
+              </ul>              
+          <img class="menu-img" src="./scr/assets/shot.png" alt="cocktail" > 
+          </div> 
+      </div>
+    </div>       
+    </section> 
+    <section id="order-form">
+      <div class="name" style="--color: dodgerblue">
+        <h2>Place Your Order</h2>
+      </div>  
+      <form id="orders" method="GET" action="order.html" class="order-form" style="--color: dodgerblue" >
+        <label for="name" style="margin-left: 25%;">Name:</label>
+        <input type="text" id="name" name="name" class="order-style" required>        
+        <div style="display: flex; text-align: start;">
+          <div class="drinks">
+          <p>Cocktails</p>
+            <label for="mexican-mule">Mexican mule: </label>
+            <input type="number" name="mexicanMule" id="mexican-mule" value="0" class="order-style" required> <br>
+            <label for="gin-basil">Gin Basil: </label>
+            <input type="number" name="gin-basil" id="gin-basil" value="0" class="order-style" required> <br> 
+            <label for="bloody-mary">Bloody Mary: </label>
+            <input type="number" name="bloody-mary" id="bloody-mary" value="0" class="order-style" required> <br>
+            <label for="mojito">Mojito: </label>
+            <input type="number" name="mojito" id="mojito" value="0" class="order-style" required> <br>
+            <label for="margarita">Margarita: </label>
+            <input type="number" name="margarita" id="margarita" value="0" class="order-style" required> <br>
+          </div>
+          <div class="drinks">
+          <p>Shots</p>
+            <label for="woo-woo">Woo Woo: </label>
+            <input type="number" name="woo-woo" id="woo-woo" value="0" class="order-style" required> <br>
+            <label for="mad-dog">Mad Dog: </label>
+            <input type="number" name="mad-dog" id="mad-dog" value="0" class="order-style" required> <br> 
+            <label for="freak-shot">Freak Shot: </label>
+            <input type="number" name="freak-shot" id="freak-shot" value="0" class="order-style" required> <br>
+            <label for="cranberry-cookie">Cranberry Cookie: </label>
+            <input type="number" name="cranberry-cookie" id="cranberry-cookie" value="0" class="order-style" required> <br>
+            <label for="silver-bullet">Silver Bullet: </label>
+            <input type="number" name="silver-bullet" id="silver-bullet" value="0" class="order-style" required>
+          </div> 
+        </div> 
+        <div class="appetizer">  
+        <p>Appetizer:</p>
+          <input class="checkbox" type="checkbox" id="meat-cuts" name="meat-cuts" value="Meat cuts">
+          <label for="meat-cuts">Meat cuts - $4.00</label><br>
+          <input class="checkbox" type="checkbox" id="cheese-platter" name="cheese-platter" value="Cheese platter">
+          <label for="cheese-platter">Cheese platter - $4.00</label>
+        </div>  
+        <textarea class="order-style" id="special" name="special" rows="4" cols="20" placeholder="Any special requests?"></textarea>
+        <input id="submitButton"  type="submit"  class="button" value="Go To Checkout">
+      </form>
+    </section>
+    <footer>
+      <p>Made with ❤️ by <i><a class="link" href="https://github.com/KristinaWyvern">Kristina Dermanskaya</a></i></p>
+    </footer>
+    <!-- <script src="./scr/script.js"></script> -->
+  </body>
+</html>

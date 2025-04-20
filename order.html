@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <meta name="viewport" content="width=1024">
+    <title>Pi Menu</title>
+    <link rel="stylesheet" href="./scr/styles.css" />
+    <link rel="icon" href="./scr/assets/logo2.png" type="image/png">
+  </head>
+  <body  style="height: 100vh;">
+    <header>
+      <nav class="nav">
+        <h1  class="neon-list name-bar"><img id="header-img" src="./scr/assets/logo.jpg" alt="Pi" ></h1>       
+        <ul>
+          <li  style="--color: #9400c7">
+            <a id="home" href="javascript:back()" class="neon-list" data-text="&nbsp;Home">
+              &nbsp;Home&nbsp;
+            </a>
+          </li>
+        </ul>        
+        <h1></h1>
+      </nav>
+    </header>
+ <div class="check" style="--color: #ffffff">    
+    <div class="list">
+        <h2 id="name"></h2>        
+        <h3>Your Order</h3>
+        <ul id="myList"></ul>         
+        <h4 id="special"></h4>       
+        <h2 id="total"></h2>
+        <p>!Payment upon receipt of order</p>
+        <p>P.s. If you want to go back to the main page take a screenshot of your receipt to show it when you receive your order🙏</p>
+    </div>
+ </div>
+    <footer>
+      <p>Made with ❤️ by <i><a class="link" href="https://github.com/KristinaWyvern">Kristina Dermanskaya</a></i></p>
+    </footer>
+    <script src="./scr/script.js"></script>
+  </body>
+</html>
