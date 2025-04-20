@@ -62,5 +62,5 @@ function back(){
   this.document.getElementById("name").innerText = `Name: `;
   this.document.getElementById("total").innerText = `Total: `;  
   this.document.getElementById("special").innerText = ` `;
-  window.location.href = './bar_menu.html';
+  window.location.href = '../bar_menu.html';
 };
