@@ -9,7 +9,7 @@
 <br/>
 
 Welcome to **Pi Bar**! This project is a simple bar menu with an order form. 
-This project contains 2 pages bar_menu for menu and order form and order for order receipt. The page styles are stored in ./scr/styles.css. Check generation is done with js and is stored in ./scr/script.js.Images used in the project are stored in ./scr/assets.
+This project contains 2 pages bar_menu for menu and order form and order (`./scr/order.html`) for order receipt. The page styles are stored in `./scr/styles.css`. Check generation is done with js and is stored in `./scr/script.js`.Images used in the project are stored in `./scr/assets`.
 
 ## Technologies used
 
